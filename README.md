@@ -25,7 +25,7 @@ root
 ## 🚀 How to Use
 1. Clone this repository to your local system:
    ```bash
-   git clone https://github.com/vaibhavgaikwad2/Machine-learning-course.git
+   
    ```
 2. Navigate through the folders to find the relevant materials.
 3. Contributions (if applicable) can be made by forking the repository, making changes, and submitting a pull request.
