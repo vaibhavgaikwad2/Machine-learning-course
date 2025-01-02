@@ -23,10 +23,7 @@ root
 - **assignments/**: Holds solutions to course assignments, structured and explained for clarity.
 
 ## 🚀 How to Use
-1. Clone this repository to your local system:
-   ```bash
-   
-   ```
+1. Clone this repository to your local system.
 2. Navigate through the folders to find the relevant materials.
 3. Contributions (if applicable) can be made by forking the repository, making changes, and submitting a pull request.
 
@@ -45,14 +42,8 @@ Ensure these dependencies are installed in your environment for running the code
 Feel free to raise issues or suggest improvements for the content. If you want to contribute, make sure to:
 
 1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your message here"
-   ```
+2. Create a new branch.
+3. Commit your changes.
 4. Push to your branch and open a pull request.
 
 ## 📄 License
