@@ -5,5 +5,5 @@ module 2 --> contains functions that multiply two numbers
 
 from .module1 import addi
 from .module2 import multii
-
+from mypackages.subpackage.module3 import divide
 
