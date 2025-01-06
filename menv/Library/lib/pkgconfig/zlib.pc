@@ -1,0 +1,13 @@
+prefix=D:/AIML/GIT/Machine-learning-course/menv/Library
+exec_prefix=D:/AIML/GIT/Machine-learning-course/menv/Library
+libdir=D:/AIML/GIT/Machine-learning-course/menv/Library/lib
+sharedlibdir=D:/AIML/GIT/Machine-learning-course/menv/Library/lib
+includedir=D:/AIML/GIT/Machine-learning-course/menv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
