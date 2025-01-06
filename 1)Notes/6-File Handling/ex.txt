@@ -1,2 +1,6 @@
-hello, how are you
-i'm good 
+hello!,world
+this is new line
+append operation taking place!
+first line 
+second line
+third line
