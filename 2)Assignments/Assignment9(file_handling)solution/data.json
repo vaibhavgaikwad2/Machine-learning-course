@@ -1,0 +1,12 @@
+{
+    "name": "Vaibhav",
+    "age": 20,
+    "isStudent": true,
+    "skills": ["Python", "JavaScript", "Machine Learning"],
+    "address": {
+      "street": "123 Main Street",
+      "city": "Mumbai",
+      "country": "India"
+    }
+  }
+  
