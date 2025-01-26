@@ -1,4 +1,7 @@
-from logger import logging
+from testing.logger import logging
+
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
 
 logging.basicConfig(
     filename='app.log',
