@@ -1,4 +1,4 @@
-from testing.logger import logging
+import logging
 
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
