@@ -27,4 +27,10 @@ def add(a,b):
     return result
 
 
+def sub(a,b):
+    result=a-b
+    logger.debug(f"Subtracting {a}-{b}={result}")
+    return result
+
 add(10,5)
+sub(10,5)
