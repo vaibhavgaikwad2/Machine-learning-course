@@ -1,5 +1,8 @@
 import logging
 
+
+
+
 ## configure logging setting
 
 logging.basicConfig(
@@ -20,7 +23,7 @@ logger=logging.getLogger("ArithmaticApp")
 
 def add(a,b):
     result=a+b
-    logger.debug(f"Adding {a} + {b}", result)
+    logger.debug(f"Adding {a} + {b}={result}")
     return result
 
 
