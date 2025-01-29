@@ -39,7 +39,6 @@ def fetched_content(url):
 
 threads=[]
 
-
 for url in url:
     thread=threading.Thread(target=fetched_content,args=(url,))
     threads.append(thread)
@@ -49,4 +48,5 @@ for thread in threads:
     thread.join()
 
 print("All web pages fetched")
+
 
