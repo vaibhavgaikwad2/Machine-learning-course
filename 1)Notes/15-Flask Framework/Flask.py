@@ -3,7 +3,7 @@ from flask import Flask
 
 
 # Initialzing the flask 
-app=Flask()  #--> It creates an instance of the flask class, which will be your WSGI (web server Gateway interface) application
+app=Flask(__name__)  #--> It creates an instance of the flask class, which will be your WSGI (web server Gateway interface) application
 
 @app.route("/")  #--> it is a decorator
 
