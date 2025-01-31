@@ -8,7 +8,7 @@ app=Flask(__name__)  #--> It creates an instance of the flask class, which will 
 @app.route("/")  #--> it is a decorator
 
 def welcome():
-     return "welcome this flask app "
+     return "welcome to this flask app "
 
 
 if __name__=="__main__":  #--> entry point fo an flask application --> from this execution will start.
