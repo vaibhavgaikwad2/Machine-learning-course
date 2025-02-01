@@ -8,9 +8,18 @@ app=Flask(__name__)  #--> It creates an instance of the flask class, which will 
 @app.route("/")  #--> it is a decorator
 
 def welcome():
-     return "welcome to this flask app "
+     return "welcome to this flask app, hello i am vaibhav gaikwad"
+
+
+
+@app.route("/index")
+
+def index():
+     return "welcome to index page"
 
 
 if __name__=="__main__":  #--> entry point fo an flask application --> from this execution will start.
-     app.run() #--> used to run the flask app
-
+     app.run(debug=True) #--> used to run the flask app
+     
+     # debug is used to update changes on real time in flask app u dont need to restart the app
+      
