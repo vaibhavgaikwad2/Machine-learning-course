@@ -10,7 +10,8 @@ def welcome():
 app.route("/form",methods=['GET','POST'])
 def form():
     if request.method=='POST':
-        pass
+        name=request.form['name']
+        return f"hello {name}"
     return render_template('form.html')
 
 
