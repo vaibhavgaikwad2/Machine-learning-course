@@ -38,3 +38,15 @@ def res(score):
 
 if __name__=="__main__":
     app.run(debug=True)
+
+@app.route('/successs/<int:score>') #--> we can only pass the string value in this if we pass int then we have to typecast int into string
+
+def successs(score):
+    res=''
+    if score>=35:
+        res='pass'
+    else:
+        res='fail'
+    
+    exp={'score':score,'res':res}
+    return render_template('result1.html',result=exp)
