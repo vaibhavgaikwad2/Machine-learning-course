@@ -25,8 +25,8 @@ def success(score):
 
 
 
-@app.route('/res/int:score>')
-def results(score):
+@app.route('/res/int:<score>')
+def res(score):
     res=''
     if score>=res:
         res='PASSED'
@@ -34,7 +34,7 @@ def results(score):
         res='FAILED'
 
     exp={'score':score,'res':res}
-    return render_template('result.html',result=res)
+    return render_template('result1.html',result=exp)
 
 if __name__=="__main__":
     app.run(debug=True)
