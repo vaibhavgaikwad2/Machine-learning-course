@@ -19,6 +19,10 @@ def success(score):
 
 
         #we are going to use this res value in html file to show on app using jinja temp
+        # {{}} exressions to print output in html
+        # {%...%} used for conditions statements and loops
+        # {#..#} this is for comments
+        
 
 if __name__=="__main__":
     app.run(debug=True)
