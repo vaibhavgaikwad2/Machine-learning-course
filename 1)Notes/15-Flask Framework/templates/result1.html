@@ -1,14 +1,20 @@
 
+<html>
     <h2>
-        final result
+        Final Results
     </h2>
     <body>
+    
+       
+         {% for key,value in results.items()   %}
+         
+          {# This is the comment section #}
+          <h1>{{ key }}<h1>
+          <h2>{{ value }}</h2>
+    
         
-           {% for key,value in result.item() %} 
-           
-            {# This is comment section #}
-            {{ key }}
-            {{value}}
-           
-           {% endfor %}
+         {% endfor %}
+    
+        
     </body>
+    </html>

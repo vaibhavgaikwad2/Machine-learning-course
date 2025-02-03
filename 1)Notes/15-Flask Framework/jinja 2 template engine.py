@@ -25,28 +25,20 @@ def success(score):
 
 
 
-@app.route('/res/int:<score>')
-def res(score):
-    res=''
-    if score>=35:
-        res='PASSED'
+@app.route('/successres/<int:score>')
+def successres(score):
+    res=""
+    if score>=50:
+        res="PASSED"
     else:
-        res='FAILED'
-
-    exp={'score':score,'res':res}
-    return render_template('result1.html',result=exp)
-
-if __name__=="__main__":
-    app.run(debug=True)
-
-@app.route('/successs/<int:score>') #--> we can only pass the string value in this if we pass int then we have to typecast int into string
-
-def successs(score):
-    res=''
-    if score>=35:
-        res='pass'
-    else:
-        res='fail'
+        res="FAILED"
     
-    exp={'score':score,'res':res}
-    return render_template('result1.html',result=exp)
+    exp={'score':score,"res":res}
+
+    return render_template('result1.html',results=exp)
+
+## if confition
+@app.route('/sucessif/<int:score>')
+def successif(score):
+
+    return render_template('result.html',results=score)
