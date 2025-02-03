@@ -28,7 +28,7 @@ def success(score):
 @app.route('/res/int:<score>')
 def res(score):
     res=''
-    if score>=res:
+    if score>=35:
         res='PASSED'
     else:
         res='FAILED'
