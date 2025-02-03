@@ -22,7 +22,19 @@ def success(score):
         # {{}} exressions to print output in html
         # {%...%} used for conditions statements and loops
         # {#..#} this is for comments
-        
+
+
+
+@app.route('/res/int:score>')
+def results(score):
+    res=''
+    if score>=res:
+        res='PASSED'
+    else:
+        res='FAILED'
+
+    exp={'score':score,'res':res}
+    return render_template('result.html',result=res)
 
 if __name__=="__main__":
     app.run(debug=True)
