@@ -25,7 +25,7 @@ def get_items():
     return jsonify(items)
 
 # Get : Retrieve a specific item by Id
-@app.route('/items/<int:item_id>',method=['GET'])
+@app.route('/items/<int:item_id>',methods=['GET'])
 def get_item(item_id):
     item=next((item for item in items if item["id"]==item_id),None)
     if item is None:
@@ -34,7 +34,7 @@ def get_item(item_id):
 
 #Post : Create a new task
 
-@app.route('/items'.methods['POST'])
+@app.route('/items',methods=['POST'])
 def create_item():
     if not request.json or not 'name' in request.json:
         return jsonify({"error":"Item not found"})
@@ -56,9 +56,17 @@ def update(item_id):
         return jsonify({"error":"item is not found"})
     
     item['name']=request.json.get('name',item['name'])
+    item['description']=request.json.get('description',item['description'])
 
-    
-   
+
+    return jsonify(item)
+
+# DELETE : Delete an item
+@app.route('/items/<int:item_id>',methods=['DELETE'])
+def delete_item(item_id):
+    global items
+    items = [item for item in items if item["id"]!=item_id]
+    return jsonify({"result":"item deleted"})
 
 
 
