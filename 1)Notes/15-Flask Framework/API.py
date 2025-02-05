@@ -39,6 +39,21 @@ def create_item():
     if not request.json or not 'name' in request.json:
         return jsonify({"error":"Item not found"})
     
+    new_item={
+        "id":items[-1]["id"]+1 if items else 1,
+        "name":request.json['name'],
+        "description":request.json["descriptio"]
+    }
+    items.append(new_item)
+    return jsonify(new_item)
+
+
+# PUT: for updating a task 
+
+
+
+
+
 
 
 if __name__=="__main__":
