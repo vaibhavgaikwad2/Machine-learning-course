@@ -55,8 +55,10 @@ def update(item_id):
     if item is None:
         return jsonify({"error":"item is not found"})
     
+    item['name']=request.json.get('name',item['name'])
 
     
+   
 
 
 
