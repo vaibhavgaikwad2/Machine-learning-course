@@ -36,7 +36,9 @@ def get_item(item_id):
 
 @app.route('/items'.method['POST'])
 def create_item():
-    if not request.json or not 'name' in request.json
+    if not request.json or not 'name' in request.json:
+        return jsonify({"error":"Item not found"})
+    
 
 
 if __name__=="__main__":
