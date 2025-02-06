@@ -11,3 +11,11 @@ st.title("Hello Streamlit")
 st.write("this is simmple text")
 
 # creating a dataframe
+df = pd.DataFrame({
+    'first coloumn':[1,2,3,4],
+    'second column':[10,20,30,40]
+})
+
+# Display the dataframe
+st.write("Here is the dataframe")
+st.write()
